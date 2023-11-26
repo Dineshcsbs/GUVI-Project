@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 50px;
+        }
+        .profile-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="profile-container">
+    <h2>User Profile</h2>
+
+    <form id="profileform">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter username" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter phone number" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Enter email" required>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" placeholder="Enter country" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="text" id="dob" name="dob" placeholder="Enter date of Birth" required>
+
+        <button type="submit">Update Profile</button>
+        <script src="jquery.min.js"></script>
+        <script src="main.js"></script>
+    </form>
+</div>
+</body>
+</html>
